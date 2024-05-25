@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
 }
+/*COMMON*/
 .big-wrapper {
     max-width: 90%;
     margin: 0 auto;
@@ -10,6 +11,19 @@ html {
     max-width: 120rem;
     margin: 0 auto;
     padding: 0 1.5rem;
+}
+.mini-wrapper {
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.title {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.text {
+    font-size: 1.8rem;
+    line-height: 1.6;
 }
 /*HEADER*/
 header {
@@ -21,14 +35,53 @@ header nav a {
 .header__works {
     font-size: 1.6rem;
 }
-
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
 /*WELCOME*/
 .welcome {
-    height: 90vh;
 }
 .blur-shadow {
     background: rgba(0, 0, 0, 0.74);
     left: 0;
     top: 0;
     backdrop-filter: blur(4px);
+}
+.welcome__slide_content_block {
+    min-height: 95vh;
+    padding: 15rem 0;
+}
+.welcome__slide_content {
+    color: white;
+}
+
+.welcome__slide_content h2 {
+    font-size: 4rem;
+}
+.welcome__slide_btn {
+    font-size: 1.6rem;
+    padding: 1.8rem 4rem;
+    font-weight: 600;
+    color: black;
+    background: white;
+}
+/*ABOUT WORK*/
+.about-work {
+    padding: 15rem 0;
+}
+.service__item {
+    padding: 2rem 0;
+    border-bottom: 1px solid lightgrey;
+    background: transparent;
+}
+.service__item_title {
+    font-size: 1.8rem;
+}
+.service__item_btn {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: rgb(238, 238, 238);
+    
 }
