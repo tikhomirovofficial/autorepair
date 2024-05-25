@@ -1,0 +1,34 @@
+html {
+    font-size: 10px;
+}
+.big-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+/*HEADER*/
+header {
+    padding: 1.5rem 0;
+}
+header nav a {
+    font-size: 1.4rem;
+}
+.header__works {
+    font-size: 1.6rem;
+}
+
+/*WELCOME*/
+.welcome {
+    height: 90vh;
+}
+.blur-shadow {
+    background: rgba(0, 0, 0, 0.74);
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(4px);
+}
