@@ -1,6 +1,9 @@
 html {
     font-size: 10px;
 }
+body {
+    overflow-x: hidden;
+}
 /*COMMON*/
 .big-wrapper {
     max-width: 90%;
@@ -77,11 +80,51 @@ a {
 }
 .service__item_title {
     font-size: 1.8rem;
+    font-weight: 500;
 }
 .service__item_btn {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
     background: rgb(238, 238, 238);
-    
+}
+.service__item_content {
+    padding-top: 3rem;
+}
+.service__img {
+    max-width: 30rem;
+    background: red;
+}
+.service__img img {
+    width: 100%;
+}
+.service__list {
+    font-size: 1.6rem;
+    padding-left: 4rem;
+}
+.service__list li {
+    list-style: disc;
+}
+.gallery {
+    padding: 15rem 0;
+}
+.gallery__item_block {
+    width: 25%;
+    height: 16vw;
+    position: relative;
+}
+.gallery__item {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+}
+.gallery__item:hover {
+    transform: scale(1.15);
+    z-index: 3;
+}
+.features {
+    padding: 15rem 0;
+    background: rgb(240, 240, 240);
 }
