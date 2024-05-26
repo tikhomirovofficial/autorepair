@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/lib/tikstyles.css">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -36,23 +37,44 @@
         </div>
     </header>
     <section class="welcome">
-        <div style="background-image: url('./assets/img/png/slider_1.png');"
-            class="welcome__slide bg-cover h-100p w-100p p-rel">
-            <div class="blur-shadow h-100p w-100p p-abs">
+        <div class="swiper-wrapper">
+            <div style="background-image: url('./assets/img/png/slider_1.png');"
+                class="welcome__slide swiper-slide bg-cover h-100p w-100p p-rel">
+                <div class="blur-shadow h-100p w-100p p-abs">
 
-            </div>
-            <div class="welcome__slide_content h-100p p-rel">
-                <div class="mini-wrapper h-100p f-c-col">
-                    <div class="welcome__slide_content_block h-100p f-c-col gap-40">
-                        <h2 class="txt-center">АВТО ТЕХЦЕНТР В ЧЕРЕПОВЦЕ, ДОБРО ПОЖАЛОВАТЬ!</h2>
-                        <p class="txt-center text">Почти у каждого человека есть автомобиль. А автомобили в свою
-                            очередь могут выдавать сбои или вообще сломаться. Специально для этого
-                            существуем мы!</p>
-                        <a href="" class="welcome__slide_btn">Онлайн-запись</a>
+                </div>
+                <div class="welcome__slide_content h-100p p-rel">
+                    <div class="mini-wrapper h-100p f-c-col">
+                        <div class="welcome__slide_content_block h-100p f-c-col gap-40">
+                            <h2 class="txt-center">АВТО ТЕХЦЕНТР В ЧЕРЕПОВЦЕ, ДОБРО ПОЖАЛОВАТЬ!</h2>
+                            <p class="txt-center text">Почти у каждого человека есть автомобиль. А автомобили в свою
+                                очередь могут выдавать сбои или вообще сломаться. Специально для этого
+                                существуем мы!</p>
+                            <a href="" class="welcome__slide_btn">Онлайн-запись</a>
+                        </div>
+
                     </div>
 
                 </div>
+            </div>
+            <div style="background-image: url('./assets/img/png/slider_1.png');"
+                class="welcome__slide swiper-slide bg-cover h-100p w-100p p-rel">
+                <div class="blur-shadow h-100p w-100p p-abs">
 
+                </div>
+                <div class="welcome__slide_content h-100p p-rel">
+                    <div class="mini-wrapper h-100p f-c-col">
+                        <div class="welcome__slide_content_block h-100p f-c-col gap-40">
+                            <h2 class="txt-center">АВТО ТЕХЦЕНТРs В ЧЕРЕПОВЦЕ, ДОБРО ПОЖАЛОВАТЬ!</h2>
+                            <p class="txt-center text">Почти у каждого человека есть автомобиль. А автомобили в свою
+                                очередь могут выдавать сбои или вообще сломаться. Специально для этого
+                                существуем мы!</p>
+                            <a href="" class="welcome__slide_btn">Онлайн-запись</a>
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -99,7 +121,7 @@
                 <div class="f-column gap-10">
                     <div>
                         <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#c-1" aria-expanded="false" aria-controls="c-1">
+                            data-bs-target="#s-1" aria-expanded="false" aria-controls="s-1">
 
                             <div class="service__item_title">Кузовной цех</div>
                             <div class="service__item_btn f-c-col">
@@ -107,9 +129,9 @@
                             </div>
 
                         </button>
-                        <div class="collapse" id="c-1">
+                        <div class="collapse" id="s-1">
                             <div class="service__item_content f-column gap-20">
-                                <img class="service__img" src="assets/img/png/slider_1.png" alt="">
+                                <img class="service__img" src="assets/img/jpg/s_1.jpg" alt="">
                                 <ul class="service__list">
                                     <li>Замена масла и масляного фильтра — 500 руб.</li>
                                     <li>Проверка масла в АКПП, при необходимости доливка — 100 руб.</li>
@@ -124,6 +146,150 @@
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#s-2" aria-expanded="false" aria-controls="s-2">
+
+                            <div class="service__item_title">Слесарный цех</div>
+                            <div class="service__item_btn f-c-col">
+                                <img height="24" src="assets/img/vectors/plus.svg" alt="">
+                            </div>
+
+                        </button>
+                        <div class="collapse" id="s-2">
+                            <div class="service__item_content f-column gap-20">
+                                <img class="service__img" src="assets/img/jpg/s_2.jpg" alt="">
+                                <ul class="service__list">
+                                    <li>Замена бампера 01-07 — 1000 руб.</li>
+                                    <li>Замена бампера 08-09 — 1000 руб.</li>
+                                    <li>Замена бампера 211 — 1000 руб.</li>
+                                    <li>Сборка и разборка двери — 700 руб.</li>
+                                    <li>Ремонт замка двери от — 500 руб.</li>
+                                    <li>Замена привода стеклоподъемника двери с разборкой — 700 руб.</li>
+                                    <li>Замена привода стеклоподъемника двери с разборкой — 600 руб..</li>
+                                    <li>Замена радиатора печки со снятием торпеды Классика — 660 руб.</li>
+                                    <li>Замена радиатора печки со снятием торпеды — 1500 руб.</li>
+                                    <li>Снять, установить торпеду — 1000 руб.</li>
+                                    <li>Снять, установить торпеду Классика — от 1500 руб.</li>
+                                    <li>Установка защиты картера — 200 руб.</li>
+                                    <li>Установка шторок все модели — 270 руб.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#s-3" aria-expanded="false" aria-controls="s-3">
+                            <div class="service__item_title">Диагностика автомобиля</div>
+                            <div class="service__item_btn f-c-col">
+                                <img height="24" src="assets/img/vectors/plus.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="collapse" id="s-3">
+                            <div class="service__item_content f-column gap-20">
+                                <img class="service__img" src="assets/img/jpg/s_3.jpg" alt="">
+                                <ul class="service__list">
+                                    <li>Компьютерная диагностика – стоимость услуги 1 тыс. рублей,</li>
+                                    <li>Ремонт электроники любых видов сложности</li>
+                                    <li>Проверка наличия утечки электричества</li>
+                                    <li>Ремонт любых ЭБУ автомобиля</li>
+                                    <li>Ремонт роботизированных КПП (Easytronic)</li>
+                                    <li>Ремонт блоков ABS</li>
+                                    <li>Обнуление блоков SRS (после ДТП)</li>
+                                    <li>Корректировка показаний спидометра</li>
+                                    <li>Раскодировка штатных магнитол</li>
+                                    <li>Программирование чип ключей</li>
+                                    <li>Восстановление проводки после ДТП, возгорания</li>
+                                    <li>Ремонт отопителей штатных не штатных</li>
+                                    <li>Сброс сервисных интервалов</li>
+                                    <li>Диагностика и ремонт пневмо и гидроподвески, блоков клапанов и управления</li>
+                                    <li>Адаптация электронных блоков, датчиков и т.д.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#s-4" aria-expanded="false" aria-controls="s-4">
+                            <div class="service__item_title">Ремонт двигателя</div>
+                            <div class="service__item_btn f-c-col">
+                                <img height="24" src="assets/img/vectors/plus.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="collapse" id="s-4">
+                            <div class="service__item_content f-column gap-20">
+                                <img class="service__img" src="assets/img/jpg/s_4.jpg" alt="">
+                                <ul class="service__list">
+                                    <li>Полная переборка со снятием — от 9500 руб</li>
+                                    <li>Прокладка головки блока цилиндра — замена 3000 руб</li>
+                                    <li>Коллекторной прокладки замена — 1500 руб</li>
+                                    <li>Прокладка поддона — 1200 руб</li>
+                                    <li>Цепь-ремень замена — 1800 руб</li>
+                                    <li>Замена маслосъемных колпачков — 1800 руб</li>
+                                    <li>Ремонт головки блока — 5000 руб</li>
+                                    <li>Регулировка клапанов — 800 руб</li>
+                                    <li>Замена сальников заднего коленвала — 2500 руб</li>
+                                    <li>Подтяжка цепи — 3800 руб</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#s-5" aria-expanded="false" aria-controls="s-5">
+                            <div class="service__item_title">Техническое обслуживание</div>
+                            <div class="service__item_btn f-c-col">
+                                <img height="24" src="assets/img/vectors/plus.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="collapse" id="s-5">
+                            <div class="service__item_content f-column gap-20">
+                                <img class="service__img" src="assets/img/jpg/s_5.jpg" alt="">
+                                <ul class="service__list">
+                                    <li>Замена дисковых тормозных колодок — 500/700 руб.</li>
+                                    <li>Замена барабанных тормозных колодок — 800/950 руб.</li>
+                                    <li>Замена колодок стояночного тормоза — 1000/1250 руб.</li>
+                                    <li>Замена салонного фильтра 500-1200 руб.</li>
+                                    <li>Замена топливного фильтра под днищем 500 руб.</li>
+                                    <li>Замена топливного фильтра в моторном отсеке 750-1250 руб.</li>
+                                    <li>Замена топливного фильтра(бензонасоса) в баке с доступом из салона от 1500 руб.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#s-6" aria-expanded="false" aria-controls="s-6">
+                            <div class="service__item_title">Шиномонтажный цех</div>
+                            <div class="service__item_btn f-c-col">
+                                <img height="24" src="assets/img/vectors/plus.svg" alt="">
+                            </div>
+                        </button>
+                        <div class="collapse" id="s-6">
+                            <div class="service__item_content f-column gap-20">
+                                <img class="service__img" src="assets/img/jpg/s_6.jpg" alt="">
+                                <ul class="service__list">
+                                    <li>Комплекс работ на 4 колеса (снятие/установка, мойка, балансировка) — 560 руб.
+                                    </li>
+                                    <li>Комплекс работ на 4 колеса (снятие/установка, мойка, демонтаж/монтаж резины,
+                                        балансировка) — 960 руб.</li>
+                                    <li>Комплекс работ на 4 колеса (снятие/установка, мойка, демонтаж/монтаж,
+                                        балансировка) — 1840 руб.</li>
+                                    <li>Снятие/установка колеса — 50 руб.</li>
+                                    <li>Мойка колеса (технологическая) — 40 руб.</li>
+                                    <li>Демонтаж колеса — 50 руб.</li>
+                                    <li>Монтаж колеса — 50 руб.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
@@ -194,16 +360,48 @@
             </div>
         </div>
     </section>
-    <section class="promo d-n">
-        <div class="mini-wrapper">
-            <div class="about-work__block f-column gap-50">
+    <section class="promo">
+        <div class="wrapper">
+            <div class="promo__block f-column gap-50">
                 <h2 class="title txt-center">
-                    Как мы работаем?
+                    Акции
                 </h2>
                 <div class="f-column gap-40">
                     <p class="text txt-center">
                         Следите за новостями и акциями нашего салона
                     </p>
+                </div>
+                <div class="f-column gap-40 al-center w-100p">
+                    <div class="promo__item d-f">
+                        <div style="background-image: url('assets/img/jpg/promo_1.webp');" class="promo__img"></div>
+                        <div class="promo__item_content jc-center f-column gap-10">
+                            <div class="promo__dates">
+                                15–31 ИЮНЯ
+                            </div>
+                            <div class="promo__title">
+                                Акция «Осенний шиномонтаж»
+                            </div>
+                            <div class="promo__text text">
+                                Акция на замену шин в Тех.Центре "Service" Поменяйте шины в окябре с 15 по 31 число и
+                                получите скидку 30%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo__item d-f">
+                        <div style="background-image: url('assets/img/png/promo_2.png');" class="promo__img"></div>
+                        <div class="promo__item_content jc-center f-column gap-10">
+                            <div class="promo__dates">
+                                15–31 ИЮНЯ
+                            </div>
+                            <div class="promo__title">
+                                Акция «Осенний шиномонтаж»
+                            </div>
+                            <div class="promo__text text">
+                                Акция на замену шин в Тех.Центре "Service" Поменяйте шины в окябре с 15 по 31 число и
+                                получите скидку 30%
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -258,12 +456,35 @@
 
     </section>
     <footer>
-        <div class="wrapper">
+        <div class="big-wrapper">
             <div class="footer__block f-row-betw">
-                <h3>ИП Трепов. 2024 Все права защищены.</h3>
+                <div class="f-column w-100p gap-20">
+                    <div class="f-row-betw footer__top">
+                        <a href=""> <img width="150" src="assets/img/vectors/logo_light.svg" alt="">
+                        </a>
+                        <nav class="d-f gap-30">
+                            <a href="">О нас</a>
+                            <a href="">Услуги</a>
+                            <a href="">Контакты</a>
+                            <a href="">Отзывы</a>
+                        </nav>
+                        <div class="header__works">
+                            Пн-Вс: 10:00 — 21:00
+                        </div>
+                    </div>
+                    <div class="f-c-col w-100p">
+                        <h5 class="w-100p fw-4">ИП Трепов. © 2024 Все права защищены.</h5>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/collapses.js"></script>
+<script src="assets/js/slider.js"></script>
+
 
 </html>

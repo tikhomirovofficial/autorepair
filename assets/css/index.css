@@ -3,6 +3,7 @@ html {
 }
 body {
     overflow-x: hidden;
+    padding-top: 4rem;
 }
 /*COMMON*/
 .big-wrapper {
@@ -112,7 +113,7 @@ a {
     list-style: disc;
 }
 .gallery {
-    padding: 15rem 0;
+    padding-top: 15rem;
 }
 .gallery__item_block {
     width: 25%;
@@ -139,10 +140,30 @@ a {
 }
 .feature__item p {
     font-size: 1.4rem;
-
 }
 .promo {
     padding: 15rem 0;
+}
+.promo__item {
+    width: 100%;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.048);
+}
+.promo__img {
+    height: 25rem;
+    background-position: bottom;
+    min-width: 29rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promo__dates {
+    font-size: 2rem;
+    color: gray;
+}
+.promo__title {
+    font-size: 3.2rem;
+}
+.promo__item_content {
+    padding: 2.4rem 4rem;
 }
 .order {
     padding: 15rem 0;
@@ -167,7 +188,14 @@ a {
     padding-top: 15rem;
 }
 footer {
-    padding: 2rem;
-    background: rgb(26, 25, 47);
+    padding: 4rem 0;
+    background: rgb(25, 25, 25);
     color: white;
+}
+.footer__top {
+    color: white;
+}
+.footer__top a {
+    font-size: 1.4rem;
+    color: white !important;
 }
