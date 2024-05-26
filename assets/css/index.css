@@ -31,6 +31,12 @@ body {
 /*HEADER*/
 header {
     padding: 1.5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: white;
+    width: 100%;
 }
 header nav a {
     font-size: 1.4rem;
@@ -127,4 +133,41 @@ a {
 .features {
     padding: 15rem 0;
     background: rgb(240, 240, 240);
+}
+.feature__item {
+    max-width: 32rem;
+}
+.feature__item p {
+    font-size: 1.4rem;
+
+}
+.promo {
+    padding: 15rem 0;
+}
+.order {
+    padding: 15rem 0;
+}
+.order__block {
+    padding: 10rem 5rem;
+    box-shadow: 0  0 3rem rgba(0, 0, 0, 0.103);
+}
+.order__input {
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    border-bottom: 1px solid lightgray;
+}
+.order__btn {
+    font-size: 1.6rem;
+    padding: 1.8rem 4rem;
+    font-weight: 600;
+    color: white;
+    background: rgb(27, 27, 27);
+}
+.map {
+    padding-top: 15rem;
+}
+footer {
+    padding: 2rem;
+    background: rgb(26, 25, 47);
+    color: white;
 }
