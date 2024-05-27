@@ -436,7 +436,7 @@
     </section>
     <section id="order" class="order">
         <div class="mini-wrapper">
-            <form action="" class="order__block f-column gap-30">
+            <form method="post" action="mailer.php" id="orderForm" class="order__block f-column gap-30">
                 <div class="f-column gap-50">
                     <h2 class="title txt-center">
                         Запись на ремонт
@@ -445,12 +445,12 @@
                     </div>
                 </div>
                 <div class="f-column gap-40">
-                    <input class="order__input" type="text" placeholder="Ваш телефон">
-                    <input class="order__input" type="text" placeholder="Ваше e-mail">
-                    <input class="order__input" type="text" placeholder="Ваше имя">
+                    <input name="phone" class="order__input" type="text" placeholder="Ваш телефон">
+                    <input name="email" class="order__input" type="text" placeholder="Ваше e-mail">
+                    <input name="name" class="order__input" type="text" placeholder="Ваше имя">
                     <div class="f-column gap-20">
                         <h4>Модель автомобиля:</h4>
-                        <select class="order__input" type="text" placeholder="fdsfsdfsd">
+                        <select name="car" class="order__input" type="text" placeholder="fdsfsdfsd">
                             <option value="Toyota">Toyota</option>
                             <option value="Honda">Honda</option>
                             <option value="Subaru">Subaru</option>
