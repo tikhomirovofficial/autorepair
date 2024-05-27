@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <meta name="description" content="'AutoRepair' – лучший сервис по ремонту автомобилей.">
+    <meta property="og:title" content="'AutoRepair' – лучший ремонт авто." />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="AutoRepair' – лучший сервис по ремонту автомобилей." />
+    <meta property="og:site_name" content="'AutoRepair' – ллучший ремонт авто." />
+    <meta name="keywords" content="ремонт, автомобиль, шиномонтаж, AutoRepair">
+    <meta name="author" content="AutoRepair">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -22,21 +31,39 @@
     <header>
         <div class="big-wrapper">
             <div class="header__block f-row-betw">
-                <a href=""> <img width="150" src="assets/img/vectors/logo.svg" alt="">
+                <a href="/"> <img width="150" src="assets/img/vectors/logo.svg" alt="">
                 </a>
-                <nav class="d-f gap-30">
-                    <a href="">О нас</a>
-                    <a href="">Услуги</a>
-                    <a href="">Контакты</a>
-                    <a href="">Отзывы</a>
+                <nav class="d-f gap-30 header__desktop">
+                    <a class="fade-scroll" href="#about">О нас</a>
+                    <a class="fade-scroll" href="#services">Услуги</a>
+                    <a class="fade-scroll" href="#contacts">Контакты</a>
                 </nav>
-                <div class="header__works">
+                <div class="header__works header__desktop">
                     Пн-Вс: 10:00 — 21:00
                 </div>
+                <div class="menu p-rel">
+                    <div id="menu-btn" class="menu__btn">
+                        <img width="34" src="assets/img/vectors/burger.svg" alt="">
+                    </div>
+                    <div id="menu-block" class="menu__block f-column gap-10 p-abs">
+                        <div class="d-f jc-end">
+                            <div id="menu-close">
+                                <img style="transform: rotateZ(45deg);" height="24" src="assets/img/vectors/plus.svg"
+                                    alt="">
+                            </div>
+
+                        </div>
+                        <a class="fade-scroll" href="#about">О нас</a>
+                        <a class="fade-scroll" href="#services">Услуги</a>
+                        <a class="fade-scroll" href="#contacts">Контакты</a>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
-    <section class="welcome">
+    <section class="welcome p-rel">
         <div class="swiper-wrapper">
             <div style="background-image: url('./assets/img/png/slider_1.png');"
                 class="welcome__slide swiper-slide bg-cover h-100p w-100p p-rel">
@@ -45,12 +72,12 @@
                 </div>
                 <div class="welcome__slide_content h-100p p-rel">
                     <div class="mini-wrapper h-100p f-c-col">
-                        <div class="welcome__slide_content_block h-100p f-c-col gap-40">
+                        <div class="welcome__slide_content_block section h-100p f-c-col gap-40">
                             <h2 class="txt-center">АВТО ТЕХЦЕНТР В ЧЕРЕПОВЦЕ, ДОБРО ПОЖАЛОВАТЬ!</h2>
                             <p class="txt-center text">Почти у каждого человека есть автомобиль. А автомобили в свою
                                 очередь могут выдавать сбои или вообще сломаться. Специально для этого
                                 существуем мы!</p>
-                            <a href="" class="welcome__slide_btn">Онлайн-запись</a>
+                            <a href="#order" class="welcome__slide_btn fade-scroll">Онлайн-запись</a>
                         </div>
 
                     </div>
@@ -64,12 +91,12 @@
                 </div>
                 <div class="welcome__slide_content h-100p p-rel">
                     <div class="mini-wrapper h-100p f-c-col">
-                        <div class="welcome__slide_content_block h-100p f-c-col gap-40">
+                        <div class="welcome__slide_content_block section h-100p f-c-col gap-40">
                             <h2 class="txt-center">АВТО ТЕХЦЕНТРs В ЧЕРЕПОВЦЕ, ДОБРО ПОЖАЛОВАТЬ!</h2>
                             <p class="txt-center text">Почти у каждого человека есть автомобиль. А автомобили в свою
                                 очередь могут выдавать сбои или вообще сломаться. Специально для этого
                                 существуем мы!</p>
-                            <a href="" class="welcome__slide_btn">Онлайн-запись</a>
+                            <a href="#order" class="welcome__slide_btn fade-scroll">Онлайн-запись</a>
                         </div>
 
                     </div>
@@ -77,8 +104,15 @@
                 </div>
             </div>
         </div>
+        <div class="prev slider-btn f-c-col">
+            <img style="transform: rotateZ(180deg);" width="18" height="18" src="assets/img/vectors/arrow-left.svg"
+                alt="">
+        </div>
+        <div class="next slider-btn f-c-col">
+            <img width="18" height="18" src="assets/img/vectors/arrow-right.svg" alt="">
+        </div>
     </section>
-    <section class="about-work">
+    <section id="about" class="about-work section">
         <div class="mini-wrapper">
             <div class="about-work__block f-column gap-50">
                 <h2 class="title txt-center">
@@ -107,7 +141,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section id="services" class="services section">
         <div class="mini-wrapper">
             <div class="about-work__block f-column gap-50">
                 <div class="f-column gap-30">
@@ -119,7 +153,7 @@
                 </div>
 
                 <div class="f-column gap-10">
-                    <div>
+                    <div class="collapse__block">
                         <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
                             data-bs-target="#s-1" aria-expanded="false" aria-controls="s-1">
 
@@ -146,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="collapse__block">
                         <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
                             data-bs-target="#s-2" aria-expanded="false" aria-controls="s-2">
 
@@ -177,7 +211,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="collapse__block">
                         <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
                             data-bs-target="#s-3" aria-expanded="false" aria-controls="s-3">
                             <div class="service__item_title">Диагностика автомобиля</div>
@@ -208,8 +242,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div>
+                    <div class="collapse__block">
                         <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
                             data-bs-target="#s-4" aria-expanded="false" aria-controls="s-4">
                             <div class="service__item_title">Ремонт двигателя</div>
@@ -235,7 +268,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="collapse__block">
                         <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
                             data-bs-target="#s-5" aria-expanded="false" aria-controls="s-5">
                             <div class="service__item_title">Техническое обслуживание</div>
@@ -259,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="collapse__block">
                         <button class="service__item f-row-betw w-100p" type="button" data-bs-toggle="collapse"
                             data-bs-target="#s-6" aria-expanded="false" aria-controls="s-6">
                             <div class="service__item_title">Шиномонтажный цех</div>
@@ -285,46 +318,41 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery ">
         <div class="gallery__block d-f flex-wrap">
-            <div class="gallery__item_block">
-                <img src="assets/img/png/slider_1.png" alt="" class="gallery__item">
+            <div style="background-image: url('assets/img/png/g_2.png');" class="gallery__item_block">
+
             </div>
-            <div class="gallery__item_block">
-                <img src="assets/img/png/slider_1.png" alt="" class="gallery__item">
+            <div style="background-image: url('assets/img/png/g_3.png');" class="gallery__item_block">
+
             </div>
-            <div class="gallery__item_block">
-                <img src="assets/img/png/slider_1.png" alt="" class="gallery__item">
+            <div style="background-image: url('assets/img/png/g_4.png');" class="gallery__item_block">
+
             </div>
-            <div class="gallery__item_block">
-                <img src="assets/img/png/slider_1.png" alt="" class="gallery__item">
+            <div style="background-image: url('assets/img/png/g_5.png');" class="gallery__item_block">
+
             </div>
         </div>
         <div class="gallery__block d-f flex-wrap">
-            <div class="gallery__item_block">
-                <img src="assets/img/png/slider_1.png" alt="" class="gallery__item">
+            <div style="background-image: url('assets/img/png/g_6.png');" class="gallery__item_block">
+
             </div>
-            <div class="gallery__item_block">
-                <img src="assets/img/png/slider_1.png" alt="" class="gallery__item">
+            <div style="background-image: url('assets/img/png/promo_2.png');" class="gallery__item_block">
+
             </div>
-            <div class="gallery__item_block">
-                <img src="assets/img/png/slider_1.png" alt="" class="gallery__item">
+            <div style="background-image: url('assets/img/jpg/s_3.jpg');" class="gallery__item_block">
+
             </div>
-            <div class="gallery__item_block">
-                <img src="assets/img/png/slider_1.png" alt="" class="gallery__item">
+            <div style="background-image: url('assets/img/jpg/s_5.jpg');" class="gallery__item_block">
+
             </div>
         </div>
     </section>
-    <section class="features">
+    <section class="features section">
         <div class="wrapper">
             <div class="features__block f-column gap-40">
                 <div class="f-column gap-30">
@@ -360,7 +388,7 @@
             </div>
         </div>
     </section>
-    <section class="promo">
+    <section class="promo section">
         <div class="wrapper">
             <div class="promo__block f-column gap-50">
                 <h2 class="title txt-center">
@@ -406,21 +434,33 @@
             </div>
         </div>
     </section>
-    <section class="order">
+    <section id="order" class="order">
         <div class="mini-wrapper">
             <form action="" class="order__block f-column gap-30">
                 <div class="f-column gap-50">
                     <h2 class="title txt-center">
-                        Комфортное ожидание
+                        Запись на ремонт
                     </h2>
                     <div class="text txt-center">Время ремонтных работ вы можете провести в зале ожидания нашего сервиса
                     </div>
                 </div>
                 <div class="f-column gap-40">
-                    <input class="order__input" type="text" placeholder="fdsfsdfsd">
-                    <input class="order__input" type="text" placeholder="fdsfsdfsd">
-                    <input class="order__input" type="text" placeholder="fdsfsdfsd">
-                    <input class="order__input" type="text" placeholder="fdsfsdfsd">
+                    <input class="order__input" type="text" placeholder="Ваш телефон">
+                    <input class="order__input" type="text" placeholder="Ваше e-mail">
+                    <input class="order__input" type="text" placeholder="Ваше имя">
+                    <div class="f-column gap-20">
+                        <h4>Модель автомобиля:</h4>
+                        <select class="order__input" type="text" placeholder="fdsfsdfsd">
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Subaru">Subaru</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Suzuki">Suzuki</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                        </select>
+                    </div>
+
                     <div class="f-c-col">
                         <button class="order__btn">
                             Отправить
@@ -430,7 +470,7 @@
             </form>
         </div>
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
         <div class="mini-wrapper">
             <div class="contacts__block f-column gap-30">
                 <h2 class="title txt-center">
@@ -459,14 +499,13 @@
         <div class="big-wrapper">
             <div class="footer__block f-row-betw">
                 <div class="f-column w-100p gap-20">
-                    <div class="f-row-betw footer__top">
-                        <a href=""> <img width="150" src="assets/img/vectors/logo_light.svg" alt="">
+                    <div class="f-row-betw footer__top flex-wrap gap-40">
+                        <a href="/"> <img width="150" src="assets/img/vectors/logo_light.svg" alt="">
                         </a>
-                        <nav class="d-f gap-30">
-                            <a href="">О нас</a>
-                            <a href="">Услуги</a>
-                            <a href="">Контакты</a>
-                            <a href="">Отзывы</a>
+                        <nav class="d-f gap-30 flex-wrap">
+                            <a class="fade-scroll" href="#about">О нас</a>
+                            <a class="fade-scroll" href="#services">Услуги</a>
+                            <a class="fade-scroll" href="#contacts">Контакты</a>
                         </nav>
                         <div class="header__works">
                             Пн-Вс: 10:00 — 21:00
@@ -485,6 +524,8 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/collapses.js"></script>
 <script src="assets/js/slider.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/fadeScroll.js"></script>
 
 
 </html>
